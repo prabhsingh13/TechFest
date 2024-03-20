@@ -1,0 +1,254 @@
+/* Imported Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Global CSS */
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'Poppins', sans-serif;
+    transition: 0.5ms;
+}
+:root{
+    --color1:#ff0000;
+    --color2:#000000;
+    --color3:#ffffff;
+    --color4:#ffe600;
+    --color5:#ff9df8;
+    --color6:#00c8ff;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    /* color: var(--color2); */
+}
+
+h1 {
+    font-size: 60px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+p {
+    font-size: 18px;
+}
+
+.navbar {
+    height: 10vh;
+    background: var(--color2);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar a {
+    color: var(--color3);
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.navbar li a:hover {
+    color: var(--color1);
+}
+
+.navbar .logo {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.navbar ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar ul li {
+    padding: 20px;
+    list-style: none;
+}
+
+.section {
+    min-height: 90vh;
+    background: var(--color4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section .about-content {
+    width: 68vw;
+    margin: 30px 0;
+}
+
+.section .about-content .content {
+    padding: 10px;
+}
+
+.section .about-content .box {
+    display: flex;
+    flex-direction: row;
+}
+
+@media (max-width: 1200px) {
+    .section .about-content .box {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .section .about-content .box .content-box {
+        padding: 10px;
+        width: 100vw;
+        background: var(--color5);
+        margin: 10px;
+        border-radius: 20px;
+    }
+
+    .section .about-content .box .content-box h3 {
+        height: 40px !important;
+    }
+
+    .section .about-content .box .content-box {
+        width: 100%;
+    }
+}
+
+.section .about-content .box .content-box {
+    padding: 10px;
+    background: var(--color5);
+    margin: 10px;
+    border-radius: 20px;
+}
+
+.section .about-content .box .content-box h3 {
+    height: 80px;
+}
+
+.project-section {
+    /* min-height: 90vh; */
+    background: var(--color6);
+    display: flex;
+    justify-content: center;
+}
+
+.project-section .project-content {
+    width: 68vw;
+    margin: 30px 0;
+}
+
+.project-section .project-content .content {
+    padding: 10px;
+}
+
+.contact-section {
+    min-height: 100vh;
+    background: var(--color5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contact-section h1{
+font-size: 80px
+}
+.contact-section .contact-content .content h1 {
+    font-size: 35px;
+}
+
+.contact-section .contact-content {
+    width: 68vw;
+    margin: 30px 0;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+.contact-section .content form {
+    /* background: #0d00ff; */
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-section .content form input {
+    padding: 10px;
+    width: 40vw;
+    margin: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.contact-section .content form textarea {
+    padding: 10px 10px 40px 10px;
+    max-width: 40vw;
+    min-width: 40vw;
+    width: 40vw;
+    margin: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.contact-section .content form button {
+    padding: 10px;
+    width: 40vw;
+    margin: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--color2);
+    color: var(--color3);
+}
+
+
+.footer {
+    /* height: 10vh; */
+    background: var(--color2);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer a {
+    color: var(--color3);
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.footer li a:hover {
+    color: var(--color1);
+}
+
+.footer .logo {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.footer ul {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0;
+}
+
+.footer ul li {
+    padding: 5px;
+    list-style: none;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    font-weight: 600;
+}
